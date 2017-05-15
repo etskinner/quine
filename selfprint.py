@@ -3,17 +3,17 @@ s=___
 t=s.splitlines()
 u=t[1].replace("_",'"')
 print(u,end="")
-print(s)
-v=t[-2].replace("_",'"')
+print(s[:-1])
+v=t[-1].replace("_",'"')
 print(v)
-for i in t[2:-2]:
+for i in t[2:-1]:
     print(i)
 ___
 """
 t=s.splitlines()
 u=t[1].replace("_",'"')
 print(u,end="")
-print(s)
+print(s[:-1])
 v=t[-1].replace("_",'"')
 print(v)
 for i in t[2:-1]:
